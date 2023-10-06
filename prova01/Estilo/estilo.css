@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    background-color: #f1f1f1;
+}
+
+
 body {
     background-color: aqua;
 }
@@ -21,19 +32,31 @@ body {
     box-sizing: border-box;
 }
 
-.menu-lateral button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin: 5px;
-    flex-direction: column;
-    transition: background-color 0.3s;
+.link1 {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 7px;
+    text-align: center;
 }
 
-.menu-lateral button:hover {
-    background-color: red;
+.link1:hover {
+    background-color: rgb(52, 196, 196);
+}
+
+@media screen and (min-width:600px) {
+    .menu-lateral {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 300px;
+    }
+
+    .navbar-top,
+    .conteudo {
+        margin-left: 300px;
+    }
 }
 
 
@@ -50,8 +73,7 @@ body {
     padding-left: 20px;
 }
 
-#botoes1:active
-{
+#botoes1:active {
     box-shadow: 2px 3px 1px;
     transform: translate(4px, 6px);
 }
@@ -62,8 +84,7 @@ body {
     padding-left: 20px;
 }
 
-#botoes2:active
-{
+#botoes2:active {
     box-shadow: 2px 3px 1px;
     transform: translate(4px, 6px);
 }
@@ -74,8 +95,7 @@ body {
     padding-left: 20px;
 }
 
-#botoes3:active
-{
+#botoes3:active {
     box-shadow: 2px 3px 1px;
     transform: translate(4px, 6px);
 }
@@ -145,8 +165,9 @@ que rodar 100% ele vai aumentar a velocidade, ele faz a border-radius de 50 % pa
 para vermelho.
 
 */
+
 .loader {
-    width: 48px; 
+    width: 48px;
     height: 48px;
     border: 5px solid #FFF;
     border-bottom-color: #FF3D00;
@@ -154,13 +175,14 @@ para vermelho.
     display: inline-block;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
-    }
+}
 
-    @keyframes rotation {
+@keyframes rotation {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
-    } 
+}

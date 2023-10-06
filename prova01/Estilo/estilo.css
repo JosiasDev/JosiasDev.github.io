@@ -138,9 +138,15 @@ body {
     align-items: center;
 }
 
+/* 
+código do loading ele faz uma animacação de rotação de 1 segundo linear ou seja sempre no mesmo local
+ele ficar rodando infinito nuncar acabar quando ele tiver em 0% ele vai rodar em 0deg um pouco devagar depois
+que rodar 100% ele vai aumentar a velocidade, ele faz a border-radius de 50 % para ficar arredondado mudar a cor do botão dentro
+para vermelho.
 
+*/
 .loader {
-    width: 48px;
+    width: 48px; 
     height: 48px;
     border: 5px solid #FFF;
     border-bottom-color: #FF3D00;
